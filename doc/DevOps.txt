@@ -1,0 +1,2 @@
+1. Use Maven to build
+2. Use Selenium 2 WebDriver, JUnit, and TestNG for Web Development automation.
