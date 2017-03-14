@@ -65,7 +65,7 @@ class Mammal (Animal):
 			
 class Reptile (Animal):
 	def __init__ (self, birthType = "born in an egg or born" \
-	" alive", appearance ="dry cales", blooded= "cold blooded"):
+	" alive", appearance ="dry scales", blooded= "cold blooded"):
 	
 		Animal.__init__(self, birthType, appearance, blooded)
 		
@@ -81,6 +81,10 @@ class Reptile (Animal):
 		for i in args:
 			sum += i
 		return sum
+
+def getBirthType (theObject):
+		print ("the {} is {}".format (type (theObject).__name__,
+		theObject.birthType))
 
 def main():
 	animal = Animal ("born in live")
@@ -99,5 +103,10 @@ def main():
 	print (reptile1)
 	
 	print ("Sum: {}".format(reptile1.sumAll (1, 2, 3, 4, 5)))
+	
+	print ("mammal1 and reptile1 object:")
+	getBirthType (mammal1)
+	getBirthType (reptile1)
+
 	
 main()
