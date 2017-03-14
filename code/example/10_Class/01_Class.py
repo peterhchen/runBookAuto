@@ -76,11 +76,11 @@ class Reptile (Animal):
 #	def sumAll (self, int, int, string)
 #	def sumAll (self, int, int, int, string)
 
-def sumALl (self, *args):
-	sum = 0
-	for i in args:
-		sum += i
-	return sum
+	def sumAll (self, *args):
+		sum = 0
+		for i in args:
+			sum += i
+		return sum
 
 def main():
 	animal = Animal ("born in live")
@@ -94,4 +94,10 @@ def main():
 	print (mammal1.nurseYoung)
 	print (mammal1)
 
+	reptile1 = Reptile ()
+	print (reptile1.birthType)
+	print (reptile1)
+	
+	print ("Sum: {}".format(reptile1.sumAll (1, 2, 3, 4, 5)))
+	
 main()
