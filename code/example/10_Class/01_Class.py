@@ -41,9 +41,9 @@ class Animal:
 		self.__blooded = blooded
 	
 	def __str__(self):
-		return "A {} is {} it is {} it is {}".format (type(self).__name__, self.birthType, self.appearance, self.blodded)
+		return "A {} is {} it is {} it is {}".format (type(self).__name__, self.birthType, self.appearance, self.blooded)
 	
-class Mamal (Animal):
+class Mammal (Animal):
 	def __init__ (self, birthType = "born alive", \
 	appearance="hair or fur", blooded="warm blooded", \
 	nurseYoung = True):
@@ -85,5 +85,13 @@ def sumALl (self, *args):
 def main():
 	animal = Animal ("born in live")
 	print (animal.birthType)
+	print (animal)	# print anaimal1 object
+	print()
+	mammal1 = Mammal()
+	print (mammal1.birthType)
+	print (mammal1.appearance)
+	print (mammal1.blooded)
+	print (mammal1.nurseYoung)
+	print (mammal1)
 
 main()
